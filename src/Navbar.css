@@ -1,0 +1,58 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    align-items: center;
+    background-color: #14463B;
+  }
+  
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-center {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  
+  .navbar-center a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px; /* Increased margin to add more space between links */
+    font-size: 16px;
+    transition: transform 0.3s ease; /* Smooth transition for the grow effect */
+  }
+  
+  .navbar-center a:hover {
+    transform: scale(1.1); /* Slightly grow the link on hover */
+  }
+  
+  .navbar-right a {
+    padding: 10px 20px; /* Add padding to create the pill shape */
+    background-color: #ffffff; /* Button background color */
+    border-radius: 50px; /* Large border-radius to create the pill shape */
+    border: none; /* Remove any border */
+    font-weight: bold; /* Make the text bold */
+    color: #14463B; /* Ensure text is dark green */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Show pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .navbar-right a:hover {
+    background-color: #e0a106; /* Darken the button on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+  
+  .navbar-logo {
+    height: 20px; /* Adjust the height to your needs */
+    width: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+  }  
+
+  

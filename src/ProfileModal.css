@@ -1,0 +1,162 @@
+/* Positioning and styling the modal */
+.profile-modal-content {
+    position: absolute;
+    top: 10%;
+    right: 1.5%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Avatar styling */
+.profile-avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Username styling */
+.profile-username {
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Description styling */
+.profile-description {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Divider styling */
+.profile-divider {
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+/* Amount and Coffees text styling */
+.profile-modal-content p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Footer with Close and Donations button */
+.profile-modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-modal-footer button {
+    background-color: #14463B;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-modal-footer button:hover {
+    background-color: #0e322a;
+}
+
+/* Styling for the donations modal */
+/* Donation Modal styling */
+.donations-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 90%; /* Ensure modal doesn't exceed screen width */
+    max-height: 80vh; /* Ensure modal doesn't exceed screen height */
+    overflow-y: auto; /* Add scroll if content exceeds the modal height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+  }
+  
+  .donation-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .donation-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+  }
+  
+  .donation-item p {
+    margin: 5px 0;
+    word-wrap: break-word; /* Ensure long texts, like addresses, wrap within the modal */
+  }
+/* Create Page Modal Styling */
+.create-page-modal-content {
+    position: absolute;
+    right: 1.5%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  /* Input fields styling */
+  .create-page-modal-content input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Modal header styling */
+  .create-page-modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  /* Footer with buttons */
+  .create-page-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .create-page-modal-footer button {
+    background-color: #14463B;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-page-modal-footer button:hover {
+    background-color: #0e322a;
+  }
+  

@@ -1,0 +1,246 @@
+/* HomePage.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wdth,wght@0,125,800;1,125,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #14463B; /* Dark green background */
+  color: white;
+  min-height: 100vh; /* Ensure it covers the full viewport */
+  overflow-x: hidden;
+}
+
+.homepage-hero {
+  position: relative;
+  background-color: #14463B;
+  padding-top: 50px; /* Adjust as needed */
+  padding-bottom: 330px; /* Space for the image to overlap */
+  text-align: center;
+}
+
+.coffee-image {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 375px; /* Adjust size as needed */
+  z-index: 10; /* Bring the image on top */
+}
+
+.circle-behind {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px; /* Adjust the size as needed */
+  height: 450px; /* Adjust the size as needed */
+  background-color: #00000022; /* Dark green color */
+  border-radius: 50%; /* Makes it a circle */
+  z-index: 5; /* Ensure it's behind the coffee glass but above other elements */
+}
+
+.homepage-title {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 125;
+  font-size: 9em; /* Adjust font size */
+  text-align: center; /* Centered text */
+  letter-spacing: -0.05em; /* Slightly reduce letter spacing */
+  line-height: 0.9; /* Tight line height */
+  color: #FBEEE5; /* Cream-like text color */
+  margin: 0; /* Remove margin */
+  padding-top: 0px; /* Space above title for the image */
+}
+
+.homepage-content {
+  background-color: #FBEEE5; /* Next section background color */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; /* Cover the full viewport */
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #ffffff; /* White background for buttons */
+  color: #14463B; /* Dark green text color for contrast */
+  border: none;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-block {
+  position: absolute;
+  top: 60%; /* Adjust as needed */
+  left: 20%; /* Adjust as needed */
+  width: 250px;
+  transform: translate(-50%, -50%);
+  color: #ffffffa5; /* Dark text color */
+  font-family: "Arial";
+  font-size: 1em;
+  font-weight: 100;
+  text-align: left;
+  z-index: 11; /* Ensure it appears above other elements */
+}
+
+.svg-arrow {
+  position: absolute;
+  top: 65%; /* Adjust based on your layout */
+  left: 31%; /* Adjust based on your layout */
+  width: 120px; /* Adjust the size of the arrow */
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 11; /* Ensure it appears above other elements */
+}
+
+/* Yellow Strips */
+.yellow-strip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  background-color: #e8ae00; /* Yellow background */
+  color: #634a00; /* Dark green text color */
+  height: 130px; /* Consistent height */
+  z-index: 10; /* Ensure it appears above other elements */
+  width: 110%; /* Adjust width as needed */
+  text-align: center;
+  font-size: 1.5em; /* Adjust font size */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); /* Add shadow */
+  overflow: hidden;
+}
+
+.top-strip {
+  top: 510px;
+  transform: translateX(-50%) rotate(-5deg);
+  overflow: hidden;
+}
+
+.bottom-strip {
+  bottom: 0px; /* Adjust position as needed */
+  background-color: #FFC107; /* Different color for the bottom strip */
+  transform: translateX(-50%) rotate(5deg);
+  box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.25); /* Add shadow */
+  overflow: hidden;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: scrolling-text 20s linear infinite;
+  font-size: 3em; 
+  font-weight: bolder;
+  color: #3a2c00;
+  font-family: 'Road Rage', cursive;
+}
+
+/* Add scrolling effect to the text */
+@keyframes scrolling-text {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.bottom-scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: bottom-scrolling-text 20s linear infinite;
+  font-size: 3em; 
+  font-weight: bolder;
+  color: #3a2c00;
+  font-family: 'Road Rage', cursive;
+}
+
+/* Create a separate animation for the bottom strip to scroll in the opposite direction */
+@keyframes bottom-scrolling-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* New Section Below Hero */
+
+.homepage-new-section {
+  background-color: #FBEEE5; /* Light cream background */
+  color: #14463B; /* Dark green text */
+  padding: 150px 20px;
+  text-align: center;
+}
+
+.new-section-title {
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+/* Coffee Grid */
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px; /* Space between grid items */
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-item {
+  text-align: center;
+}
+
+.coffee-item img {
+  width: 100%;
+  max-width: 200px; /* Size of the circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures image fits well */
+}
+
+.coffee-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Explore Button Styles */
+.explore-button-container {
+  margin-top: 50px; /* Space above the button */
+  text-align: center;
+}
+
+.explore-button {
+  padding: 15px 30px; /* Adjust padding for size */
+  background-color: #14463B; /* Dark green background */
+  color: #FBEEE5; /* Cream-like text color */
+  font-size: 1.5em; /* Larger text size */
+  font-weight: bold; /* Bold text */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.explore-button:hover {
+  background-color: #0e322a; /* Darken the button on hover */
+}
